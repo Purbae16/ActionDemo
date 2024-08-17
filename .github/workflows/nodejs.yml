@@ -32,3 +32,8 @@ jobs:
       working-directory: ./todo_app
     - run: npm test
       working-directory: ./todo_app
+    - name: Release
+      run: npx release-it --ci
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      working-directory: ./todo_app
