@@ -2,6 +2,14 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const [isCompleteScreen, setIsCompleteScreen] = useState (false);
+  const [allTodos, setTodos] = useState ([]);
+  const [newTitle, setNewTitle] = useState ('');
+  const [newDescription, setNewDescription] = useState ('');
+  const [completedTodos, setCompletedTodos] = useState ([]);
+  const [currentEdit,setCurrentEdit] = useState("");
+  const [currentEditedItem,setCurrentEditedItem] = useState("");
+  
   return (
     <div className="App">
       <header className="App-header">
