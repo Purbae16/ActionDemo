@@ -42,7 +42,7 @@ jobs:
     needs: build 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Git user
+    - name: Initialize Git user
       run: |
         git config --global user.name "Purbae16"
         git config --global user.email "purbahassan@gmail.com"
