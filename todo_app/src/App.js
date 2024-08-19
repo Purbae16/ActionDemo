@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [mount, setmount] = useState(0);
 
   return (
     <div className="App">
@@ -12,9 +12,9 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          Current count: {count}
+          Current mount: {mount}
         </p>
-        <button onClick={() => setCount(count + 1)}>Increase Count</button>
+        <button onClick={() => setmount(mount + 1)}>Increase mount</button>
         <a
           className="App-link"
           href="https://reactjs.org"
